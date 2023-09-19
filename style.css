@@ -1,0 +1,560 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+:root {
+  --white: #fff;
+  --semi-black: #020305;
+  --btn-black: #0d0f12;
+  --blue: #a9c2cb;
+}
+
+html {
+  font-size: 12px;
+}
+
+body {
+  font-size: 10px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  padding: 1.1em 2.6em;
+  border-radius: 1em;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-black {
+  background: var(--btn-black);
+  box-shadow: 0px 19px 45px -10px rgba(13, 15, 18, 0.5);
+  transition: 0.7s;
+  color: var(--white);
+}
+
+.btn-black:hover {
+  background: #000000;
+  border-radius: 2rem;
+}
+
+/* ========= Header ========= */
+
+header {
+  padding-top: 3em;
+  margin-bottom: 5em;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 10em 1.6em;
+}
+
+.links ul {
+  display: flex;
+}
+
+.links ul li {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-left: 3em;
+}
+
+.links ul li a {
+  color: var(--semi-black);
+}
+
+#link-btn {
+  color: var(--white);
+}
+
+.widgets {
+  display: none;
+}
+
+main {
+  background: url(./Assets/cosmos-bg.jpg);
+  background-position: right bottom;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  border: none;
+  border-radius: 2em;
+  margin-top: 8em;
+  height: 30rem;
+}
+
+.main-left {
+  padding: 3rem 0 0 3rem;
+  width: 50%;
+}
+
+.main-left h2 {
+  width: 23rem;
+  color: var(--white);
+  font-size: 3.2rem;
+  font-weight: 800;
+}
+
+.cosmonavt {
+  transform: rotateY(180deg);
+  width: 50%;
+  position: relative;
+  top: 4rem;
+  left: 20rem;
+}
+
+.exercising-box {
+  width: 15rem;
+  position: absolute;
+  top: 31rem;
+  right: 19rem;
+  z-index: 9;
+}
+
+.space-walk-box {
+  width: 17rem;
+  position: absolute;
+  top: 34rem;
+  right: 41rem;
+  z-index: 9;
+}
+
+.total-time-box {
+  z-index: 9;
+  width: 25rem;
+  position: absolute;
+  top: 46.6rem;
+  right: 25rem;
+}
+
+.main-about {
+  margin-top: 2em;
+}
+
+.main-about-text {
+  width: 35em;
+  color: #171e27;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.button-section {
+  margin-top: 3em;
+  display: flex;
+  align-items: center;
+}
+
+.button-section .btn {
+  color: var(--white);
+  font-size: 1.8em;
+  font-style: normal;
+  margin-right: 3em;
+}
+
+.watch-the-video {
+  color: var(--semi-black);
+  font-size: 1.8em;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.play-button {
+  width: 2.5em;
+  margin-top: 0.8em;
+  margin-left: 1em;
+}
+
+/* ========== Logos Section =========== */
+
+.logos-section img {
+  margin-right: 10em;
+  opacity: 0.35;
+}
+
+#spacex {
+  width: 28em;
+}
+
+#nasa {
+  width: 10em;
+}
+
+#boeing {
+  width: 20em;
+}
+
+#astroscale {
+  width: 20em;
+}
+
+/* ========== Join Section ========== */
+
+.join-section {
+  display: flex;
+}
+
+.join-left h2 {
+  width: 45%;
+  color: var(--semi-black);
+  font-size: 3.6em;
+  font-weight: 800;
+}
+
+.join-cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+}
+
+.join-cards .card {
+  width: 24%;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+  text-align: left;
+  margin-right: 6em;
+}
+
+.card-head-without-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 1rem;
+  background: #a9c2cb;
+}
+
+.card-head-without-bg img {
+  width: 2.5em;
+}
+
+.card-body h3 {
+  color: var(--semi-black);
+  font-size: 1.8em;
+  font-weight: 800;
+  width: 15em;
+  margin-top: 1em;
+}
+
+.card-body p {
+  color: #171e27;
+  font-size: 1.2em;
+  font-weight: 500;
+  width: 17em;
+  margin-top: 0.5em;
+  margin-bottom: 3em;
+}
+
+/* ========== Explore Section ========== */
+
+.explore-about {
+  background: url(./Assets/red-cosmos-bg.jpg);
+  border-radius: 2em;
+  height: 30rem;
+  background-position: right top;
+  background-size: cover;
+}
+
+.explore-about h2 {
+  color: var(--white);
+  text-align: center;
+  font-size: 4em;
+  font-weight: 800;
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 1.5em;
+}
+
+.explore-cards {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+  position: relative;
+  top: -8em;
+}
+
+.explore-cards .card {
+  border-radius: 1.2em;
+  background: var(--white);
+  box-shadow: 0px 20px 39px -12px rgba(99, 117, 124, 0.2);
+  height: 30em;
+  width: 30em;
+  text-align: left;
+  padding: 2.6em;
+}
+
+.explore-cards .card .card-head {
+  color: #a9c2cb;
+  font-size: 4em;
+  font-weight: 800;
+}
+
+.explore-cards .card .card-body h2 {
+  color: var(--semi-black);
+  font-size: 1.8em;
+  font-weight: 800;
+  width: 12em;
+  margin-top: 0.7em;
+  margin-bottom: 1.5em;
+}
+
+.explore-cards .card .card-body p {
+  color: #171e27;
+  font-size: 1.2em;
+  font-weight: 500;
+  width: 17em;
+  float: left;
+}
+
+/* ========= Join Section ======== */
+
+.colorful-bg {
+  background: url(./Assets/colorful-cosmos-bgjpg.jpg);
+  background-size: cover;
+  height: 30em;
+  border-radius: 2em;
+  margin-top: 1em;
+}
+
+.colorful-main {
+  padding: 6em 0 6em 6em;
+}
+
+.colorful-main h2 {
+  color: var(--white);
+  font-size: 4em;
+  font-weight: 800;
+}
+
+.colorful-main p {
+  color: var(--white);
+  font-size: 1.2em;
+  font-weight: 400;
+  margin-top: 0.7em;
+  width: 42em;
+}
+
+.colorful-main input {
+  width: 33em;
+  padding: 1.4em 2em;
+  border-radius: 1.2em;
+  border: none;
+  margin-top: 2.4em;
+}
+
+.colorful-main a {
+  color: var(--white);
+  font-size: 1.4em;
+  font-weight: 600;
+  padding: 1.35em 2.1em;
+  margin-left: 1.2em;
+  border-radius: 1.2em;
+  background: var(--a-9-c-2-cb, #a9c2cb);
+  box-shadow: 0px 19px 45px -10px rgba(13, 15, 18, 0.5);
+  transition: 0.7s;
+}
+
+.colorful-main a:hover {
+  border-radius: 1.6em;
+  background-color: #69818a;
+}
+
+/* ======== Footer Section ========= */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6em;
+}
+
+.footer-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo img {
+  width: 10em;
+}
+
+.footer-middle ul li {
+  display: flex;
+  float: left;
+}
+
+.footer-middle ul li a {
+  color: var(--semi-black);
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-right: 2.8em;
+}
+
+.footer-end ul a {
+  color: #171e27;
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-right: 2.8em;
+}
+
+.footer-bottom a {
+  display: flex;
+  color: #5c5050;
+  font-size: 1.4em;
+  font-weight: 600;
+  text-decoration-line: underline;
+  justify-content: center;
+  margin-block: 4em;
+}
+
+@media only screen and (max-width: 375px) {
+  .links,
+  #link-btn {
+    display: none;
+  }
+  .widgets {
+    display: inline-block;
+    position: relative;
+  }
+
+  body {
+    width: 100%;
+  }
+
+  .logo {
+    margin-left: 2em;
+  }
+
+  main {
+    width: 415px;
+    border-radius: 0px;
+    background-position: left center;
+    margin-top: 2em;
+  }
+  .cosmonavt {
+    position: relative;
+    left: -20em;
+    top: 5em;
+    width: 200%;
+  }
+  .exercising-box {
+    position: relative;
+    left: 1em;
+    top: 32em;
+  }
+  .space-walk-box {
+    display: none;
+  }
+  .total-time-box {
+    position: absolute;
+    left: 5em;
+    top: 65em;
+  }
+  .main-about {
+    margin-top: 18em;
+    color: #171e27;
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+  .main-about-text {
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+  }
+  .button-section {
+    margin-top: 3em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .button-section .btn {
+    display: inline-flex;
+    padding: 20px 40px;
+    align-items: center;
+  }
+  .watch-the-video {
+    font-size: 1.8rem;
+  }
+  .logos-section {
+    flex-wrap: wrap;
+  }
+
+  .join-section {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .join-section h2 {
+    width: 100%;
+  }
+
+  .join-cards .card {
+    width: 100%;
+  }
+
+  .explore-about {
+    width: 380px;
+    border-radius: 0px;
+  }
+
+  .explore-cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .explore-cards .card {
+    margin-bottom: 1em;
+  }
+
+  .colorful-bg {
+    width: 380px;
+    border-radius: 0px;
+  }
+
+  .colorful-main {
+    display: flex;
+    flex-direction: column;
+    padding: 3em 0 3em 3em;
+  }
+
+  .colorful-main p {
+    width: 100%;
+  }
+
+  .colorful-main input {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 0.5em;
+  }
+
+  .colorful-main a {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .footer-middle ul li {
+    display: flex;
+    flex-direction: column;
+  }
+}
